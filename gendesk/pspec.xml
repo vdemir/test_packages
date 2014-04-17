@@ -14,7 +14,7 @@
         <BuildDependencies>
             <Dependency>go</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="ab901b4c427a79426b5145a15fc0fde19c39adbb" type="tarxz">/home/vedat/Downloads/gendesk-0.6.1.tar.xz</Archive>
+        <Archive sha1sum="ab901b4c427a79426b5145a15fc0fde19c39adbb" type="tarxz">http://roboticoverlords.org/gendesk/gendesk-0.6.1.tar.xz</Archive>
     </Source>
     <Package>
         <Name>gendesk</Name>
