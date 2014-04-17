@@ -12,8 +12,9 @@ def build():
 
     shelltools.cd("%s/gendesk-0.6.1/" % get.workDIR()) 
     shelltools.system("go build")
+    shelltools.chmod("%s/gendesk-0.6.1/gendesk-0.6.1" % get.workDIR())
     
     
 def install():	
     pisitools.dobin("gendesk-0.6.1", "/usr/bin/")
-    shelltools.chmod("%s/gendesk-0.6.1/gendesk-0.6.1" % get.workDIR())
+    pisitools.rename("/usr/bin/gendesk-0.6.1", "gendesk")
