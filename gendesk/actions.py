@@ -10,7 +10,8 @@ from pisi.actionsapi import pisitools
 
 def build():
 
-    shelltools.cd("%s/gendesk-0.6.1/" % get.workDIR())  
+    #shelltools.cd("%s/gendesk-0.6.1/" % get.workDIR()) 
+     shelltools.cd("%s/gendesk-"+ get.srcVERSION()/" % get.workDIR()) 
     shelltools.system("go build")
 
 def install():
