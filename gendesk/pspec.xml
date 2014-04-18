@@ -18,9 +18,6 @@
     </Source>
     <Package>
         <Name>gendesk</Name>
-        <RuntimeDependencies>
-            <Dependency>glibc</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
