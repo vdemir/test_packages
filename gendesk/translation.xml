@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>lazarus</Name>
+        <Name>gendesk</Name>
         <Summary xml:lang="tr">.dektop dosyalarını üretmek ve iconları yüklemek için araç</Summary>
     </Source>
 </PISI>

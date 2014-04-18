@@ -9,8 +9,8 @@
         <License>MIT</License>
         <PartOf>util</PartOf>
         <IsA>util</IsA>
-        <Summary>Utility to generate .desktop files and download icons</Summary>
-        <Description>.dektop dosyalarını üretmek ve iconları yüklemek için araç</Description>
+        <Summary>Desktop File Generator</Summary>
+        <Description>Utility to generate .desktop files and download icons</Description>
         <BuildDependencies>
             <Dependency>go</Dependency>
         </BuildDependencies>
