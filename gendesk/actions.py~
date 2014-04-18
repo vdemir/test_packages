@@ -17,4 +17,3 @@ def build():
 def install():	
     pisitools.dobin("gendesk-0.6.1", "/usr/bin/")
     pisitools.rename("/usr/bin/gendesk-0.6.1", "gendesk")
-    pisitools.dodoc('LICENSE')

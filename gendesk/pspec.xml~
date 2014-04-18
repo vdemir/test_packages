@@ -22,8 +22,7 @@
             <Dependency>glibc</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="all">/</Path>
         </Files>
     </Package>
     <History>
