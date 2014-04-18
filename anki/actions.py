@@ -9,7 +9,6 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 def install():
     #shelltools.makedirs("%s/usr/share/man/man1/" % get.installDIR())
-    pisitools.dodoc("anki.1")
     shelltools.makedirs("%s/usr/local/bin/anki" % get.installDIR())
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
