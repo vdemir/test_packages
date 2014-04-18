@@ -7,14 +7,11 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
+
 def install():
-    #shelltools.makedirs("%s/usr/share/man/man1/" % get.installDIR())
-    shelltools.makedirs("%s/usr/local/bin/anki" % get.installDIR())
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
-#    
-
-#    pisitools.dobin("anki")
-
-
-# By PiSiDo 2.0.0
+	
+    pisitools.dobin("runanki", "/usr/bin/")
+    pisitools.insinto("/usr/share/", "anki")
+    pisitools.insinto("/usr/share/", "aqt")
+    #pisitools.domove("anki", "/usr/share/")
+    #pisitools.domove("aqt", "/usr/share/")
