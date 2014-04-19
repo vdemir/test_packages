@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=anki
+Name[tr]=anki
+GenericName=Rst Editor
+GenericName[tr]=Flashcard uygulaması
+Comment=Live view supported Qt4 based Webkit integrated Rst editor
+Comment[tr]=Qt4 tabanlı, anlık önizleme destekli Rst düzenleme editörü
+Icon=anki
+Exec=runanki
+Terminal=false
+Type=Application
+Categories=Python;Utility;TextEditor;

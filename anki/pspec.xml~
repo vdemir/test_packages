@@ -7,7 +7,6 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>AGPL3</License>
-        <Icon>anki</Icon>
         <PartOf>office</PartOf>
         <IsA>app:gui</IsA>
         <Summary>Anki - powerful, intelligent flashcards</Summary>
@@ -27,16 +26,8 @@
             <Dependency>mplayer</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/anki</Path>
             <Path fileType="all">/</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/anki.desktop">anki.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/anki.png">anki.png</AdditionalFile>
-        </AdditionalFiles>
     </Package>
     <History>
         <Update release="1">
@@ -48,3 +39,5 @@
         </Update>
     </History>
 </PISI>
+
+<!-- By PiSiDo 2.0.0 -->
