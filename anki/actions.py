@@ -16,4 +16,5 @@ def install():
     pisitools.insinto("/usr/share/pixmaps/", "anki.png")
     pisitools.insinto("/usr/share/pixmaps/", "anki.xpm")
     pisitools.insinto("/usr/share/applications/", "anki.desktop")
-    #pisitools.dodoc("README, LICENSE")
+    pisitools.insinto("/usr/share/anki/", "thirdparty/send2trash")
+    #pisitools.doman("README", "LICENSE")
