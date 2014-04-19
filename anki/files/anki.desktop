@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=anki
-Name[tr]=anki
+Name=Anki
+Name[tr]=Anki
 GenericName=Anki
-GenericName[tr]=Flashcard uygulaması
+GenericName[tr]=Flaş kart uygulaması
 Comment=Friendly, intelligent flash cards. Remembering things just became much easier.
-Comment[tr]=Flashcard uygulaması
+Comment[tr]=Flai kart uygulaması
 Icon=anki
 Exec=runanki
 Terminal=false

@@ -8,7 +8,7 @@
         </Packager>
         <License>GPL</License>
         <Icon>jedit</Icon>
-        <PartOf>programming</PartOf>
+        <PartOf>programming.editor</PartOf>
         <IsA>app:gui</IsA>
         <Summary>Programmer's test editor</Summary>
         <Description>Text editor for programmers, written in Java</Description>

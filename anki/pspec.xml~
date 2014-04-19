@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>Anki</Name>
+        <Name>anki</Name>
         <Homepage>http://ankisrs.net</Homepage>
         <Packager>
             <Name>Vedat Demir</Name>
