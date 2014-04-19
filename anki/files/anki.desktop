@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=anki
 Name[tr]=anki
-GenericName=Rst Editor
+GenericName=Anki
 GenericName[tr]=Flashcard uygulaması
-Comment=Live view supported Qt4 based Webkit integrated Rst editor
-Comment[tr]=Qt4 tabanlı, anlık önizleme destekli Rst düzenleme editörü
+Comment=Friendly, intelligent flash cards. Remembering things just became much easier.
+Comment[tr]=Flashcard uygulaması
 Icon=anki
 Exec=runanki
 Terminal=false

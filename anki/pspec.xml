@@ -31,7 +31,6 @@
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/anki</Path>
-            <Path fileType="all">/</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/anki.desktop">anki.desktop</AdditionalFile>
