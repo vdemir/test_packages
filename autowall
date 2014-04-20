@@ -1,5 +1,0 @@
-while [ 1 -eq 1 ]; do
-
-   rotator
-   sleep 3m #Change wallpaper interval, This is 15 minutes
-done

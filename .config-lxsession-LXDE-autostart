@@ -1,9 +1,0 @@
-@lxpanel --profile LXDE
-@pcmanfm --desktop --profile LXDE
-@xscreensaver -no-splash
-@xfce4-power-manager
-@conky
-@nmcli con up uuid a5527363-0618-402e-8e10-63abdf5eed60
-@kotaci
-@xbacklight -dec 100
-@autowall
