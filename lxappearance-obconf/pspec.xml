@@ -61,7 +61,8 @@
             <Comment>version bump</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>
-        </Update><Update release="1">
+        </Update>
+        <Update release="1">
             <Date>2013-10-12</Date>
             <Version>0.2.0</Version>
             <Comment>First release</Comment>
