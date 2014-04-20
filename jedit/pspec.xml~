@@ -8,8 +8,8 @@
         </Packager>
         <License>GPL</License>
         <Icon>jedit</Icon>
+        <PartOf>desktop.programming</PartOf>
         <IsA>app:gui</IsA>
-        <PartOf>desktop.lxde.development</PartOf>
         <Summary>Programmer's test editor</Summary>
         <Description>Text editor for programmers, written in Java</Description>
         <BuildDependencies>
