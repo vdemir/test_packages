@@ -1,0 +1,31 @@
+#!/bin/bash
+
+picturesPath=/usr/share/lxde/wallpapers #Your wallpapers folder
+
+#IFS="$(printf '\n\t')"
+#allFiles=( $(find "$picturesPath" -maxdepth 1 -type f) )
+
+allFiles=()
+for f in $picturesPath/*; do
+    if [ -f "$f" ]
+    then
+            allFiles[${#allFiles[@]}]="$f"
+    fi
+done
+
+allFilesCount=${#allFiles[*]}
+
+if [ ${allFilesCount} -eq 0 ]
+then
+    exit 1
+fi
+
+selectedFileIdx=$[ ( $RANDOM % ${allFilesCount} ) ]
+selectedFile=${allFiles[$selectedFileIdx]}
+
+if  [ -f "$selectedFile"  ]
+then
+    echo "$selectedFile"
+     sleep 3s #increase if problems
+    pcmanfm --set-wallpaper="$selectedFile" #you can change this command with your desktop manager's one
+fi
