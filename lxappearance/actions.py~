@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--enable-dbus --enable-gtk2")
+    autotools.configure("--enable-dbus --sysconfdir=/etc --prefix=/usr --enable-gtk2")
                                                    
 
 def build():
