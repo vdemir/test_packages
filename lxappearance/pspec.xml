@@ -18,8 +18,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
     </Source>
-
-    <Package>
+   <Package>
         <Name>lxappearance</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>

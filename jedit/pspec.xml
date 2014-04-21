@@ -9,7 +9,7 @@
         <License>GPL</License>
         <Icon>jedit</Icon>
         <IsA>app:gui</IsA>
-        <PartOf>desktop.lxde.development</PartOf>
+        <PartOf>editor</PartOf>
         <Summary>Programmer's test editor</Summary>
         <Description>Text editor for programmers, written in Java</Description>
         <BuildDependencies>
