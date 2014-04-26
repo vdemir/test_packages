@@ -1,0 +1,42 @@
+<PISI>
+    <Source>
+        <Name>libqtxdg</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde.base</PartOf>
+        <IsA>library</IsA>
+        <Summary>Library providing freedesktop.org specs implementations for Qt.</Summary>
+        <Description>Library providing freedesktop.org specs implementations for Qt.</Description>
+        <BuildDependencies>
+            <Dependency>git</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>unzip</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="1f38d5b1264a71a42e75236beb0dadf70f4cb160" type="zip">https://github.com/lxde/libqtxdg/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <Name>libqtxdg</Name>
+        <Files>
+            <Path fileType="header">/usr/include/qtxdg</Path>
+	    <Path fileType="library">/usr/lib64</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share/libqtxdg</Path>
+	    <Path fileType="data">/usr/share/cmake/qtxdg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-04-25</Date>
+            <Version>1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

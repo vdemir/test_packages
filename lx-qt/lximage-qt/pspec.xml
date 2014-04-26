@@ -1,0 +1,36 @@
+<PISI>
+    <Source>
+        <Name>lximage-qt</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde.base</PartOf>
+        <IsA>library</IsA>
+        <Summary>Common base library for LXQt components.</Summary>
+        <Description>Core utility library for all LXDE-Qt components</Description>
+        <BuildDependencies>
+            <Dependency>liblxqt</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="7113a642246a185e1f8dd361150c1d3ab0c04fad" type="zip">https://github.com/lxde/lximage-qt/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <Name>lximage-qt</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-04-25</Date>
+            <Version>1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

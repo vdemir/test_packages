@@ -1,0 +1,40 @@
+<PISI>
+    <Source>
+        <Name>liblxqt</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde.base</PartOf>
+        <IsA>library</IsA>
+        <Summary>Common base library for LXQt components.</Summary>
+        <Description>Core utility library for all LXDE-Qt components</Description>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="b556f746eb9fd2d014790b3ac177ae87fd080da9" type="zip">https://github.com/lxde/liblxqt/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <Name>liblxqt</Name>
+        <RuntimeDependencies>
+            <Dependency>libqtxdg</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-04-25</Date>
+            <Version>1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

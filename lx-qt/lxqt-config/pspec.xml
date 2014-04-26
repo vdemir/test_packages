@@ -1,0 +1,41 @@
+<PISI>
+    <Source>
+        <Name>lxqt-config</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde.base</PartOf>
+        <IsA>library</IsA>
+        <Summary>LXQt system configuration.</Summary>
+        <Description>LXDE-Qt system configurations (control center)</Description>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="e554399a90af02399354ba4e21db1703bd800ccd" type="zip">https://github.com/lxde/lxqt-config/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <Name>lxqt-config</Name>
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="config">/etc</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share/lxqt</Path>
+	    <Path fileType="data">/usr/share/cmake/qtxdg</Path>
+	    <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-04-25</Date>
+            <Version>1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

@@ -1,0 +1,39 @@
+<PISI>
+    <Source>
+        <Name>libfm</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde.base</PartOf>
+        <IsA>library</IsA>
+        <Summary>LXQt system configuration.</Summary>
+        <Description>LXDE-Qt system configurations (control center)</Description>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="f4da9f73111364291501bfc752c50d43a17f17cf" type="tarxz">http://downloads.sourceforge.net/pcmanfm/libfm-1.2.0.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>libfm</Name>
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="config">/etc</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share/lxqt</Path>
+	    <Path fileType="data">/usr/share/cmake/qtxdg</Path>
+	    <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-04-25</Date>
+            <Version>1.2.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>

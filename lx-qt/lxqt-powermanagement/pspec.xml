@@ -1,0 +1,42 @@
+<PISI>
+    <Source>
+        <Name>lxqt-powermanagement</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde.base</PartOf>
+        <IsA>library</IsA>
+        <Summary>Common base library for LXQt components.</Summary>
+        <Description>Core utility library for all LXDE-Qt components</Description>
+        <BuildDependencies>
+            <Dependency>liblxqt</Dependency>
+            <Dependency>qt-devel</Dependency>
+	    <Dependency>libxcb</Dependency>
+            <Dependency>upower</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="39106caba6879fdafe58683db005e29d83b7b5b4" type="zip">https://github.com/lxde/lxqt-powermanagement/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <Name>lxqt-powermanagement</Name>
+        <RuntimeDependencies>
+            <Dependency>libqtxdg</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-04-25</Date>
+            <Version>1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
