@@ -17,8 +17,13 @@
 	    <Dependency>libxcb</Dependency>
             <Dependency>upower</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="39106caba6879fdafe58683db005e29d83b7b5b4" type="zip">https://github.com/lxde/lxqt-powermanagement/archive/master.zip</Archive>
+        <Archive sha1sum="39106caba6879fdafe58683db005e29d83b7b5b4"type="zip">https://github.com/lxde/lxqt-powermanagement/archive/master.zip</Archive>
+        <Patches>
+            <Patch level="0">Qt4toqt.patch</Patch>
+            <Patch level="0">Qt4toqt2.patch</Patch>
+        </Patches>
     </Source>
+        
     <Package>
         <Name>lxqt-powermanagement</Name>
         <RuntimeDependencies>

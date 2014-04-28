@@ -13,9 +13,13 @@ from pisi.actionsapi import pisitools
 #QT_INSTALL_PREFIX=/usr/include/Qt"
 
 def setup():
-    cmaketools.configure("-DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/usr -DINCLUDE_INSTALL_DIR=/usr/include/Qt -DQT_INCLUDE_DIR=/usr/include/qt -DCMAKE_INSTALL_LIBDIR=/usr/lib")
+    cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
+			-DCMAKE_INSTALL_PREFIX=/usr \
+			-DINCLUDE_INSTALL_DIR=/usr/include/ \
+			-DQT_CORE_LIB=/usr/include/QtCore \
+			-DCMAKE_INSTALL_LIBDIR=/usr/lib")
 #    pisitools.dosed("CMakeCache.txt", "qt4", "qt")
-
+#-DQT_INCLUDE_DIR=/usr/include/ 
 def build():
     cmaketools.make()
 
