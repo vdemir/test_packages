@@ -9,8 +9,8 @@
         <License>GPL2</License>
         <PartOf>desktop.lxde.base</PartOf>
         <IsA>library</IsA>
-        <Summary>LXQt system configuration.</Summary>
-        <Description>LXDE-Qt system configurations (control center)</Description>
+        <Summary>Core library of PCManFM file manager</Summary>
+        <Description>libfm is a Core library of PCManFM file manager</Description>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>lxde-menu-cache-devel</Dependency>
