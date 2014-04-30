@@ -22,7 +22,7 @@
         <Files>
             <Path fileType="sysdir">/etc</Path> 
             <Path fileType="library">/usr/lib</Path> 
-            <Path fileType="data">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
             <Path fileType="doc">/usr/share</Path>
         </Files>
     </Package>

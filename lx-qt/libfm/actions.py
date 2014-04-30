@@ -14,14 +14,13 @@ def setup():
     
     autotools.configure("--prefix=/usr -enable-shared --disable-static --without-gtk  --disable-gtk-doc \
                          --enable-udisks --enable-actions --disable-demo --sysconfdir=/etc \
-			 GIO_LIBS='-L/usr/lib -lgio-2.0 -lgobject-2.0 -lglib-2.0'  \
-                         GIO_CFLAGS='-I/usr/include/glib-2.0/ -I/usr/lib/glib-2.0/include -I/usr/include/gio-unix-2.0' \
-			 DBUS_LIBS=-L/usr/lib \
-		         DBUS_CFLAGS=-I/usr/include/dbus-1.0 \
-                         MENU_CACHE_LIBS=-L/usr/lib \
+			 GIO_LIBS='-L/usr/lib -lgio-2.0 -lgobject-2.0 -lglib-2.0 -ldbusmenu-qt -ldbusmenu-glib' \
+                         GIO_CFLAGS='-I/usr/include/glib-2.0/ -I/usr/include/gio-unix-2.0 -I/usr/lib/glib-2.0/include' \
+			 DBUS_LIBS='-L/usr/lib -ldbusmenu-glib -ldbusmenu-qt -ldbus-c++-1 -ldbus-glib-1 -ldbus-1' \
+		         DBUS_CFLAGS='-I/usr/include/dbus-1.0 -I/usr/include/libdbusmenu-glib-0.4 -I/usr/include/dbusmenu-qt' \
+                         MENU_CACHE_LIBS='-L/usr/lib -lmenu-cache' \
 			 MENU_CACHE_CFLAGS=-I/usr/include/menu-cache/ ")
-                         
-
+ 	                                  
 def build():
      autotools.make()
 
