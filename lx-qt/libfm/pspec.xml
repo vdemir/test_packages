@@ -13,18 +13,17 @@
         <Description>LXDE-Qt system configurations (control center)</Description>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
+	    <Dependency>lxde-menu-cache-devel</Dependency>
         </BuildDependencies>
         <Archive sha1sum="f4da9f73111364291501bfc752c50d43a17f17cf" type="tarxz">http://downloads.sourceforge.net/pcmanfm/libfm-1.2.0.tar.xz</Archive>
     </Source>
     <Package>
         <Name>libfm</Name>
         <Files>
-	    <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="config">/etc</Path>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="data">/usr/share/lxqt</Path>
-	    <Path fileType="data">/usr/share/cmake/qtxdg</Path>
-	    <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="sysdir">/etc</Path> 
+            <Path fileType="library">/usr/lib</Path> 
+            <Path fileType="data">/usr/bin</Path>
+            <Path fileType="doc">/usr/share</Path>
         </Files>
     </Package>
     <History>

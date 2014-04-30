@@ -6,34 +6,24 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import get
-#from pisi.actionsapi import pisitools
-
-# if pisi can't find source directory, see /var/pisi/lxqt-config/work/ and:
-# WorkDir="lxqt-config-"+ get.srcVERSION() +"/sub_project_dir/"
-
+from pisi.actionsapi import shelltools
+from pisi.actionsapi import libtools
+from pisi.actionsapi import pisitools
+ 
 def setup():
-    autotools.configure("--prefix=/usr \
-    --sysconfdir=/etc")
+    
+    autotools.configure("--prefix=/usr -enable-shared --disable-static --without-gtk  --disable-gtk-doc \
+                         --enable-udisks --enable-actions --disable-demo --sysconfdir=/etc \
+			 GIO_LIBS='-L/usr/lib -lgio-2.0 -lgobject-2.0 -lglib-2.0'  \
+                         GIO_CFLAGS='-I/usr/include/glib-2.0/ -I/usr/lib/glib-2.0/include -I/usr/include/gio-unix-2.0' \
+			 DBUS_LIBS=-L/usr/lib \
+		         DBUS_CFLAGS=-I/usr/include/dbus-1.0 \
+                         MENU_CACHE_LIBS=-L/usr/lib \
+			 MENU_CACHE_CFLAGS=-I/usr/include/menu-cache/ ")
+                         
 
 def build():
-    cmaketools.make()
+     autotools.make()
 
 def install():
-    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-# Take a look at the source folder for these file as documentation.
-#    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
-
-# If there is no install rule for a runnable binary, you can 
-# install it to binary directory.
-#    pisitools.dobin("lxqt-config")
-
-# You can use these as variables, they will replace GUI values before build.
-# Package Name : lxqt-config
-# Version : 1.0
-# Summary : LXQt system configuration.
-
-# For more information, you can look at the Actions API
-# from the Help menu and toolbar.
-
-# By PiSiDo 2.0.0
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
