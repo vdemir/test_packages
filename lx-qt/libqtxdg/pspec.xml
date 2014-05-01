@@ -16,7 +16,7 @@
             <Dependency>qt-devel</Dependency>
             <Dependency>unzip</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="1f38d5b1264a71a42e75236beb0dadf70f4cb160" type="zip">https://github.com/lxde/libqtxdg/archive/master.zip</Archive>
+        <Archive sha1sum="eb0e7501d2e7826c750623238d031306c4129f20" type="zip">https://github.com/vdemir/libqtxdg/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>libqtxdg</Name>

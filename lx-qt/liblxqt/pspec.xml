@@ -15,7 +15,7 @@
             <Dependency>cmake</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="b556f746eb9fd2d014790b3ac177ae87fd080da9" type="zip">https://github.com/lxde/liblxqt/archive/master.zip</Archive>
+        <Archive sha1sum="5885435451851f8f003fc1e9527da1f0b6aca27f" type="zip">https://github.com/vdemir/liblxqt/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>liblxqt</Name>
