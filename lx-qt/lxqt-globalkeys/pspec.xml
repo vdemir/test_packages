@@ -1,0 +1,37 @@
+<PISI>
+    <Source>
+        <Name>lxqt-globalkeys</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.kde.admin</PartOf>
+        <IsA>app</IsA>
+        <Summary>Daemon used to register global keyboard shortcuts</Summary>
+        <Description>LXQt daemon and library for global keyboard shortcuts registration.</Description>
+        <BuildDependencies>
+            <Dependency>liblxqt</Dependency>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="f74843926e8072fed8aa3c66b5ac22956e3c574f" type="zip">https://github.com/lxde/lxqt-globalkeys/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <Name>lxqt-globalkeys</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-05-01</Date>
+            <Version>1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
