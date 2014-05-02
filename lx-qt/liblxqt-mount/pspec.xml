@@ -12,10 +12,10 @@
         <Summary>Common base library for LXQt components.</Summary>
         <Description>Core utility library for all LXDE-Qt components</Description>
         <BuildDependencies>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>glib2</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="566b2acb52b1fe3c7303019db35019d174f04dc1" type="zip">https://github.com/vdemir/lxqt-panel/archive/master.zip</Archive>
+        <Archive sha1sum="d646082e19ddd26fa7ce961f5d221ace57b4e852" type="zip">https://github.com/vdemir/liblxqt-mount/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>liblxqt-mount</Name>
@@ -28,12 +28,10 @@
     <History>
         <Update release="1">
             <Date>2014-04-25</Date>
-            <Version>1.0</Version>
+            <Version>0.1</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>
         </Update>
     </History>
 </PISI>
-
-<!-- By PiSiDo 2.0.0 -->

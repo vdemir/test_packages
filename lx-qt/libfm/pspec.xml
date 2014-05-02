@@ -15,7 +15,7 @@
             <Dependency>qt-devel</Dependency>
 	    <Dependency>menu-cache</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="f4da9f73111364291501bfc752c50d43a17f17cf" type="tarxz">http://downloads.sourceforge.net/pcmanfm/libfm-1.2.0.tar.xz</Archive>
+        <Archive sha1sum="840d9860542563995e4e9c2ab66ca560018dfacb" type="zip">https://github.com/vdemir/libfm/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>libfm</Name>

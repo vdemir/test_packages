@@ -3,7 +3,6 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
 
-
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import get
@@ -11,7 +10,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
 
 def setup():
-    shelltools.system("./autogen.sh --disable-gtk-doc --disable-tests --prefix=/usr")
+    shelltools.export("AUTOPOINT", "true")
+    autotools.autoreconf("-fiv")
+    autotools.configure("--disable-static \
+                         --enable-nls \
+                         --enable-startup-notification \
+                         --docdir=/%s/%s" % (get.docDIR(), get.srcNAME()))
 
 def build():
     autotools.make()

@@ -23,7 +23,6 @@
             <Dependency>gksu</Dependency>
 	    <Dependency>xarchiver</Dependency>
             <Dependency>lxterminal</Dependency>
-	    <Dependency>menu-cache</Dependency>
         </RuntimeDependencies>
         <Name>pcmanfm-qt</Name>
         <Files>

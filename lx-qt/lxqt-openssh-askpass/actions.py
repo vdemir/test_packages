@@ -5,7 +5,6 @@
 
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import get
-#from pisi.actionsapi import pisitools
 
 
 def setup():

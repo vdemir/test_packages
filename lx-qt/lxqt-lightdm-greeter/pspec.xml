@@ -1,33 +1,33 @@
 <PISI>
     <Source>
-        <Name>lximage-qt</Name>
+        <Name>lxqt-lightdm-greeter</Name>
         <Homepage>http://www.lxde.org</Homepage>
         <Packager>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.base</PartOf>
-        <IsA>library</IsA>
-        <Summary>Common base library for LXQt components.</Summary>
-        <Description>Core utility library for all LXDE-Qt components</Description>
+        <PartOf>desktop.lxde</PartOf>
+        <IsA>app</IsA>
+        <Summary>lxde-qt front-end for lightdm</Summary>
+        <Description>lxde-qt front-end for lightdm</Description>
         <BuildDependencies>
-            <Dependency>qt-devel</Dependency>
-	    <Dependency>libexif-devel</Dependency> 
+            <Dependency>liblxqt</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="a58074c4615b02d346f75aba0c52961cb9e6e733" type="zip">https://github.com/lxde/lximage-qt/archive/master.zip</Archive>
+        <Archive sha1sum="45eae806c25cf1568bde32b73c16fa6814cbe3d6" type="zip">https://github.com/vdemir/lxqt-lightdm-greeter/archive/master.zip</Archive>
     </Source>
     <Package>
-        <Name>lximage-qt</Name>
+        <Name>lxqt-lightdm-greeter</Name>
         <Files>
+	    <Path fileType="sysdir">/etc</Path>
 	    <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="data">/usr/share/</Path>
+	    <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2014-04-25</Date>
-            <Version>1.0</Version>
+            <Date>2014-05-02</Date>
+            <Version>0.1</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>

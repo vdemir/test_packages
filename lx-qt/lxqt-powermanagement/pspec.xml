@@ -30,7 +30,8 @@
             <Dependency>libqtxdg</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share/cmake/qtxdg</Path>
         </Files>
     </Package>
     <History>

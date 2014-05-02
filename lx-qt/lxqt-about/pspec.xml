@@ -1,24 +1,23 @@
 <PISI>
     <Source>
-        <Name>lximage-qt</Name>
+        <Name>lxqt-about</Name>
         <Homepage>http://www.lxde.org</Homepage>
         <Packager>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.base</PartOf>
-        <IsA>library</IsA>
-        <Summary>Common base library for LXQt components.</Summary>
-        <Description>Core utility library for all LXDE-Qt components</Description>
+        <PartOf>desktop.lxde</PartOf>
+        <IsA>app</IsA>
+        <Summary>About dialog of LXDE-Qt</Summary>
+        <Description>LXQt about dialog.</Description>
         <BuildDependencies>
-            <Dependency>qt-devel</Dependency>
-	    <Dependency>libexif-devel</Dependency> 
+            <Dependency>liblxqt</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="a58074c4615b02d346f75aba0c52961cb9e6e733" type="zip">https://github.com/lxde/lximage-qt/archive/master.zip</Archive>
+        <Archive sha1sum="9f7124bc4bcf16d93eddd7e7c3f0a9c21c60022c" type="zip">https://github.com/vdemir/lxqt-about/archive/master.zip</Archive>
     </Source>
     <Package>
-        <Name>lximage-qt</Name>
+        <Name>lxqt-about</Name>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="data">/usr/share/</Path>
@@ -26,8 +25,8 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2014-04-25</Date>
-            <Version>1.0</Version>
+            <Date>2014-05-02</Date>
+            <Version>0.1</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>

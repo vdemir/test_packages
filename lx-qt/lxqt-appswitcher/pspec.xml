@@ -16,12 +16,12 @@
             <Dependency>liblxqt</Dependency>
             <Dependency>lxqt-globalkeys</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="f9f5aa82fe92cfaefbab9856769b71c990d3dc9b" type="zip">https://github.com/lxde/lxqt-appswitcher/archive/master.zip</Archive>
+        <Archive sha1sum="173e7ca5b4c224c1284251836b843298f4508996" type="zip">https://github.com/vdemir/lxqt-appswitcher/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>lxqt-appswitcher</Name>
         <Files>
-            <Path fileType="all">/</Path>
+	    <Path fileType="executable">/usr/bin</Path>
         </Files>
     </Package>
     <History>

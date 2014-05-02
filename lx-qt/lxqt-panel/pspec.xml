@@ -30,11 +30,7 @@
         <Name>lxqt-panel</Name>
         <RuntimeDependencies>
             <Dependency>icu4c</Dependency>
-            <Dependency>liblxqt-mount</Dependency>
-            <Dependency>libqtxdg</Dependency>
             <Dependency>libsysstat</Dependency>
-            <Dependency>lxqt-globalkeys</Dependency>
-            <Dependency>menu-cache</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="sysdir">/etc</Path>
