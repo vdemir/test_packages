@@ -1,33 +1,35 @@
 <PISI>
     <Source>
-        <Name>lxqt-globalkeys</Name>
+        <Name>lxqt-notificationd</Name>
         <Homepage>http://www.lxde.org</Homepage>
         <Packager>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.kde.admin</PartOf>
+        <PartOf>desktop.lxde</PartOf>
         <IsA>app</IsA>
-        <Summary>Daemon used to register global keyboard shortcuts</Summary>
-        <Description>LXQt daemon and library for global keyboard shortcuts registration.</Description>
+        <Summary>LXQt notification daemon and library.</Summary>
+        <Description>Notification daemon</Description>
         <BuildDependencies>
-            <Dependency>liblxqt</Dependency>
-	    <Dependency>libX11</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="388a8bb793b58f9b3c381389533bf9803df936c1" type="zip">https://github.com/vdemir/lxqt-globalkeys/archive/master.zip</Archive>
+        <Archive sha1sum="095d4cb949b022d0d47508d8a4e89819d99f2dfb" type="zip">https://github.com/vdemir/lxqt-notificationd/archive/master.zip</Archive>
     </Source>
     <Package>
-        <Name>lxqt-globalkeys</Name>
+        <Name>lxqt-notificationd</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2014-05-01</Date>
-            <Version>1.0</Version>
+            <Date>2014-05-02</Date>
+            <Version>0.1</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>

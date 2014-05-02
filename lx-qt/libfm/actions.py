@@ -11,9 +11,11 @@ from pisi.actionsapi import get
  
 def setup():
     
-    autotools.configure("--prefix=/usr -enable-shared --disable-static --without-gtk  --disable-gtk-doc \
+    autotools.configure("--prefix=/usr -enable-shared --disable-static \
+                         --without-gtk  --disable-gtk-doc \
                          --enable-udisks --enable-actions --sysconfdir=/etc")
- 	                                  
+
+#                        --without-gtk  --disable-gtk-doc \	                                  
 def build():
      autotools.make()
 

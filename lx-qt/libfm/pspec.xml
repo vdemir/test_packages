@@ -13,13 +13,14 @@
         <Description>libfm is a Core library of PCManFM file manager</Description>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
-	    <Dependency>lxde-menu-cache-devel</Dependency>
+	    <Dependency>menu-cache</Dependency>
         </BuildDependencies>
         <Archive sha1sum="f4da9f73111364291501bfc752c50d43a17f17cf" type="tarxz">http://downloads.sourceforge.net/pcmanfm/libfm-1.2.0.tar.xz</Archive>
     </Source>
     <Package>
         <Name>libfm</Name>
         <Files>
+            <Path fileType="binary">/usr/bin</Path>
             <Path fileType="sysdir">/etc</Path> 
             <Path fileType="library">/usr/lib</Path> 
             <Path fileType="header">/usr/include</Path>

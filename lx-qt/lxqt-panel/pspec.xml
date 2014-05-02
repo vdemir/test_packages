@@ -1,0 +1,58 @@
+<PISI>
+    <Source>
+        <Name>lxqt-panel</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde</PartOf>
+        <IsA>app</IsA>
+        <Summary>Desktop panel</Summary>
+        <Description>The LXQt desktop panel</Description>
+        <BuildDependencies>
+            <Dependency>icu4c-devel</Dependency>
+            <Dependency>liblxqt-mount</Dependency>
+            <Dependency>libqtxdg</Dependency>
+            <Dependency>libsysstat-devel</Dependency>
+            <Dependency>lxqt-globalkeys</Dependency>
+            <Dependency>menu-cache-devel</Dependency>
+	    <Dependency>pulseaudio-libs-devel</Dependency>
+	    <Dependency>alsa-lib-devel</Dependency>
+	    <Dependency>libXcomposite-devel</Dependency>
+	    <Dependency>lm_sensors-devel</Dependency>
+	    <Dependency>libstatgrab</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="97042f1fdcc93c1315ce1aa7c67268a35cd9552a" type="zip">https://github.com/vdemir/lxqt-panel/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <Name>lxqt-panel</Name>
+        <RuntimeDependencies>
+            <Dependency>icu4c</Dependency>
+            <Dependency>liblxqt-mount</Dependency>
+            <Dependency>libqtxdg</Dependency>
+            <Dependency>libsysstat</Dependency>
+            <Dependency>lxqt-globalkeys</Dependency>
+            <Dependency>menu-cache</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="sysdir">/etc</Path>
+	    <Path fileType="execute">/usr/bin</Path>
+	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-05-02</Date>
+            <Version>0.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

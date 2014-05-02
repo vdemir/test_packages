@@ -1,0 +1,44 @@
+<PISI>
+    <Source>
+        <Name>pcmanfm-qt</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat  Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>The LXQt file manager, Qt port of PCManFM</Summary>
+        <Description>File manager and desktop icon manager (Qt port of PCManFM and libfm)</Description>
+        <BuildDependencies>
+            <Dependency>libfm</Dependency>
+            <Dependency>liblxqt</Dependency>
+            <Dependency>menu-cache-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="0536ab93e8f0154cddbf951b6f432e06caa070e4" type="zip">https://github.com/vdemir/pcmanfm-qt/archive/master.zip</Archive>
+    </Source>
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>gksu</Dependency>
+	    <Dependency>xarchiver</Dependency>
+            <Dependency>lxterminal</Dependency>
+	    <Dependency>menu-cache</Dependency>
+        </RuntimeDependencies>
+        <Name>pcmanfm-qt</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-05-02</Date>
+            <Version>1.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat  Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

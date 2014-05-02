@@ -13,8 +13,9 @@
         <Description>LXDE-Qt system configurations (control center)</Description>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
+	    <Dependency>libXcursor-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="e554399a90af02399354ba4e21db1703bd800ccd" type="zip">https://github.com/lxde/lxqt-config/archive/master.zip</Archive>
+        <Archive sha1sum="1d1ff8a1c894b555459e257b37dffa64be57eef0" type="zip">https://github.com/vdemir/lxqt-config/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>lxqt-config</Name>

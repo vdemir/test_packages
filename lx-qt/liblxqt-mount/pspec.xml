@@ -15,12 +15,14 @@
             <Dependency>libXfixes</Dependency>
             <Dependency>glib2</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="566b2acb52b1fe3c7303019db35019d174f04dc1" type="zip">https://github.com/lxde/liblxqt-mount/archive/master.zip</Archive>
+        <Archive sha1sum="566b2acb52b1fe3c7303019db35019d174f04dc1" type="zip">https://github.com/vdemir/lxqt-panel/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>liblxqt-mount</Name>
         <Files>
-            <Path fileType="all">/</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share/</Path>
+	    <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
     <History>
