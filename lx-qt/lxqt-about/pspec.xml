@@ -9,15 +9,18 @@
         <License>GPL2</License>
         <PartOf>desktop.lxde</PartOf>
         <IsA>app</IsA>
-        <Summary>About dialog of LXDE-Qt</Summary>
-        <Description>LXQt about dialog.</Description>
-        <BuildDependencies>
-            <Dependency>liblxqt</Dependency>
-        </BuildDependencies>
+        <Summary>LXQt about dialog.</Summary>
+        <Description>About dialog of LXDE-Qt</Description>
         <Archive sha1sum="9f7124bc4bcf16d93eddd7e7c3f0a9c21c60022c" type="zip">https://github.com/vdemir/lxqt-about/archive/master.zip</Archive>
-    </Source>
+        <BuildDependencies>
+            <Dependency>libqtxdg-devel</Dependency>
+        </BuildDependencies>
+            </Source>
     <Package>
         <Name>lxqt-about</Name>
+        <RuntimeDependencies>
+            <Dependency>libqtxdg</Dependency>
+        </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="data">/usr/share/</Path>

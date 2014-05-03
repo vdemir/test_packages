@@ -12,9 +12,11 @@
         <Summary>The LXQt file manager, Qt port of PCManFM</Summary>
         <Description>File manager and desktop icon manager (Qt port of PCManFM and libfm)</Description>
         <BuildDependencies>
-            <Dependency>libfm</Dependency>
-            <Dependency>liblxqt</Dependency>
+            <Dependency version="1.2">libfm-devel</Dependency>
+            <Dependency>liblxqt-devel</Dependency>
             <Dependency>menu-cache-devel</Dependency>
+	    <Dependency>libqtxdg-devel</Dependency>
+	    <Dependency>libfm-devel</Dependency>
         </BuildDependencies>
         <Archive sha1sum="0536ab93e8f0154cddbf951b6f432e06caa070e4" type="zip">https://github.com/vdemir/pcmanfm-qt/archive/master.zip</Archive>
     </Source>
@@ -23,10 +25,14 @@
             <Dependency>gksu</Dependency>
 	    <Dependency>xarchiver</Dependency>
             <Dependency>lxterminal</Dependency>
+	    <Dependency>libqtxdg</Dependency>
+	    <Dependency>libfm-qt</Dependency>
         </RuntimeDependencies>
         <Name>pcmanfm-qt</Name>
-        <Files>
-            <Path fileType="all">/</Path>
+        Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/</Path>
+	    <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
     <History>

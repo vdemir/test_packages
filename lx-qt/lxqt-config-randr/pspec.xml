@@ -11,15 +11,15 @@
         <IsA>app</IsA>
         <Summary>LXQt monitor configuration module</Summary>
         <Description>Clone of Randr of System Settings KDE, based solely on Qt libraries</Description>
-        <BuildDependencies>
-            <Dependency>liblxqt</Dependency>
-        </BuildDependencies>
         <Archive sha1sum="491093719de5e56033dcb0067f8c36096479d4bc" type="zip">https://github.com/vdemir/lxqt-config-randr/archive/master.zip</Archive>
-    </Source>
+        <BuildDependencies>
+            <Dependency>libqtxdg-devel</Dependency>
+        </BuildDependencies>
+          </Source>
     <Package>
         <Name>lxqt-config-randr</Name>
         <RuntimeDependencies>
-            <Dependency>liblxqt</Dependency>
+            <Dependency>libqtxdg</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>

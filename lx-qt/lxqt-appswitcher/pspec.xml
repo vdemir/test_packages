@@ -7,9 +7,9 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.base</PartOf>
+        <PartOf>desktop.lxde</PartOf>
         <IsA>app</IsA>
-        <Summary>The LXQt application switcher</Summary>
+        <Summary>Applications switcher</Summary>
         <Description>The LXQt application switcher</Description>
         <BuildDependencies>
             <Dependency>libX11-devel</Dependency>
@@ -27,7 +27,7 @@
     <History>
         <Update release="1">
             <Date>2014-05-01</Date>
-            <Version>1.0</Version>
+            <Version>0.1</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>

@@ -6,7 +6,6 @@
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 
 
 def setup():
@@ -17,6 +16,4 @@ def build():
 
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
-    #shelltools.system("mkdir %s/usr/lib" % get.installDIR())
-    #shelltools.system("ln -s %s/usr/lib64/lib* %s/usr/lib/" %(get.installDIR(), get.installDIR()))
-
+    pisitools.dodoc("AUTHORS", "COPYING")

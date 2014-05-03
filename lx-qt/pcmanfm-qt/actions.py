@@ -5,8 +5,7 @@
 
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import get
-#from pisi.actionsapi import pisitools
-
+from pisi.actionsapi import pisitools
 
 
 def setup():
@@ -17,3 +16,4 @@ def build():
 
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.dodoc("AUTHORS", "COPYING")

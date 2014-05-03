@@ -11,18 +11,30 @@
         <IsA>library</IsA>
         <Summary>Common base library for LXQt components.</Summary>
         <Description>Core utility library for all LXDE-Qt components</Description>
+        <Archive sha1sum="d646082e19ddd26fa7ce961f5d221ace57b4e852" type="zip">https://github.com/vdemir/liblxqt-mount/archive/master.zip</Archive>
         <BuildDependencies>
+            <Dependency>liblxqt-devel</Dependency>
+	    <Dependency>libqtxdg-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="d646082e19ddd26fa7ce961f5d221ace57b4e852" type="zip">https://github.com/vdemir/liblxqt-mount/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>liblxqt-mount</Name>
         <Files>
 	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>liblxqt-mount-devel</Name>
+        <Summary>Development headers for liblxqt-mount</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">liblxqt-mount</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
     <History>

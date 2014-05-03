@@ -15,6 +15,7 @@
             <Dependency>liblxqt</Dependency>
 	    <Dependency>itstool</Dependency>
 	    <Dependency>libxklavier-devel</Dependency>
+	    <Dependency>xorg-server-xephyr</Dependency>
         </BuildDependencies>
         <Archive sha1sum="70ee94b90016302d29dc34e2bca5355a830983ca" type="tarxz">https://launchpad.net/lightdm/1.11/1.11.0/+download/lightdm-1.11.0.tar.xz</Archive>
     </Source>

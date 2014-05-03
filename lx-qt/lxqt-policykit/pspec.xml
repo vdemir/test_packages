@@ -12,9 +12,11 @@
         <Summary>Policykit agent</Summary>
         <Description>The LXQt policykit authentication agent</Description>
         <BuildDependencies>
-            <Dependency>liblxqt</Dependency>
-            <Dependency>libqtxdg</Dependency>
+            <Dependency>liblxqt-devel</Dependency>
+            <Dependency>libqtxdg-devel</Dependency>
             <Dependency>polkit-qt_1-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>polkit-qt_1-devel</Dependency>
         </BuildDependencies>
         <Archive sha1sum="d75be3f52bf4f498cb056767a911f1010fe2a018" type="zip">https://github.com/vdemir/lxqt-policykit/archive/master.zip</Archive>
     </Source>
@@ -22,9 +24,11 @@
         <Name>lxqt-policykit</Name>
         <RuntimeDependencies>
             <Dependency>polkit-qt_1</Dependency>
+	    <Dependency>libqtxdg</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
     <History>
@@ -37,5 +41,3 @@
         </Update>
     </History>
 </PISI>
-
-<!-- By PiSiDo 2.0.0 -->

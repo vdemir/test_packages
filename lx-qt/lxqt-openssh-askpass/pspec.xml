@@ -11,18 +11,19 @@
         <IsA>app</IsA>
         <Summary>LXQt openssh password prompt</Summary>
         <Description>Used to ask for user/password with GUI for OpenSSH</Description>
-        <BuildDependencies>
-            <Dependency>liblxqt</Dependency>
-        </BuildDependencies>
         <Archive sha1sum="4788b7fd0087d4ee1a3a1f54093742aacbe865a3" type="zip">https://github.com/vdemir/lxqt-openssh-askpass/archive/master.zip</Archive>
-    </Source>
+        <BuildDependencies>
+            <Dependency>libqtxdg-devel</Dependency>
+        </BuildDependencies>
+        </Source>
     <Package>
         <Name>lxqt-openssh-askpass</Name>
         <RuntimeDependencies>
-            <Dependency>liblxqt</Dependency>
+            <Dependency>libqtxdg</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share</Path>
 	</Files>
     </Package>
     <History>

@@ -11,21 +11,28 @@
         <IsA>library</IsA>
         <Summary>Library providing freedesktop.org specs implementations for Qt.</Summary>
         <Description>Library providing freedesktop.org specs implementations for Qt.</Description>
+        <Archive sha1sum="eb0e7501d2e7826c750623238d031306c4129f20" type="zip">https://github.com/vdemir/libqtxdg/archive/master.zip</Archive>
         <BuildDependencies>
-            <Dependency>git</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>unzip</Dependency>
-        </BuildDependencies>
-        <Archive sha1sum="eb0e7501d2e7826c750623238d031306c4129f20" type="zip">https://github.com/vdemir/libqtxdg/archive/master.zip</Archive>
+        </BuildDependencies>   
     </Source>
     <Package>
         <Name>libqtxdg</Name>
         <Files>
-            <Path fileType="header">/usr/include/qtxdg</Path>
-	    <Path fileType="library">/usr/lib64</Path>
 	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="data">/usr/share/libqtxdg</Path>
-	    <Path fileType="data">/usr/share/cmake/qtxdg</Path>
+	    <Path fileType="data">/usr/share/</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libqtxdg-devel</Name>
+        <Summary>Development headers for libqtxdg</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libqtxdg</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
     <History>
