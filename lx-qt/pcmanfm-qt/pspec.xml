@@ -11,28 +11,31 @@
         <IsA>app:gui</IsA>
         <Summary>The LXQt file manager, Qt port of PCManFM</Summary>
         <Description>File manager and desktop icon manager (Qt port of PCManFM and libfm)</Description>
+        <Archive sha1sum="0536ab93e8f0154cddbf951b6f432e06caa070e4" type="zip">https://github.com/vdemir/pcmanfm-qt/archive/master.zip</Archive>
         <BuildDependencies>
             <Dependency version="1.2">libfm-devel</Dependency>
             <Dependency>liblxqt-devel</Dependency>
             <Dependency>menu-cache-devel</Dependency>
 	    <Dependency>libqtxdg-devel</Dependency>
-	    <Dependency>libfm-devel</Dependency>
+	    <Dependency>evince-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="0536ab93e8f0154cddbf951b6f432e06caa070e4" type="zip">https://github.com/vdemir/pcmanfm-qt/archive/master.zip</Archive>
     </Source>
     <Package>
         <RuntimeDependencies>
             <Dependency>gksu</Dependency>
+	    <Dependency>evince</Dependency>
 	    <Dependency>xarchiver</Dependency>
             <Dependency>lxterminal</Dependency>
 	    <Dependency>libqtxdg</Dependency>
-	    <Dependency>libfm-qt</Dependency>
+	    <Dependency version="1.2">libfm</Dependency>
+	    <Dependency>leafpad</Dependency>
         </RuntimeDependencies>
         <Name>pcmanfm-qt</Name>
-        Files>
+        <Files>
+	    <Path fileType="library">/usr/lib</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/</Path>
 	    <Path fileType="data">/usr/share/</Path>
+	    <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
     <History>
@@ -46,4 +49,3 @@
     </History>
 </PISI>
 
-<!-- By PiSiDo 2.0.0 -->

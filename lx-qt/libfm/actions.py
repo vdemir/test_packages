@@ -11,9 +11,9 @@ from pisi.actionsapi import autotools
 
 def setup():
     shelltools.system("./autogen.sh --enable-shared --disable-static \
-				    --enable-udisks --disable-gtk-doc \
+				    --enable-udisks --without-gtk \
                                     --disable-actions --disable-demo \
-                                    --without-gtk --prefix=/usr")
+                                    --disable-gtk-doc --prefix=/usr")
 
 def build():
     autotools.make()

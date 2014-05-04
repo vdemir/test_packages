@@ -27,6 +27,7 @@
 	    <Dependency>libXcomposite-devel</Dependency>
 	    <Dependency>lm_sensors-devel</Dependency>
 	    <Dependency>libxcb-devel</Dependency>
+	    <Dependency>network-manager-applet-devel</Dependency>
         </BuildDependencies>
         </Source>
     <Package>
@@ -43,6 +44,7 @@
             <Dependency>pulseaudio</Dependency>
 	    <Dependency>network-manager-applet</Dependency>
 	    <Dependency>lxqt-powermanagement</Dependency>
+	    <Dependency>xfce4-power-manager</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="sysdir">/etc</Path>

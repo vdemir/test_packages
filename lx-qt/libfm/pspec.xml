@@ -20,6 +20,7 @@
     <Package>
         <Name>libfm</Name>
         <Files>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="sysdir">/etc</Path> 
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share</Path>
