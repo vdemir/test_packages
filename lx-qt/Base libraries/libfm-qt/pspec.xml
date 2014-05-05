@@ -15,7 +15,7 @@
             <Dependency>qt-devel</Dependency>
 	    <Dependency>menu-cache-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="840d9860542563995e4e9c2ab66ca560018dfacb" type="zip">https://github.com/vdemir/libfm/archive/master.zip</Archive>
+        <Archive sha1sum="798e0743e89e40b21270f717ef488c654c7fd725" type="zip">https://github.com/vdemir/libfm/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>libfm</Name>
