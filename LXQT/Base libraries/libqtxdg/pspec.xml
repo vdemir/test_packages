@@ -1,0 +1,48 @@
+<PISI>
+    <Source>
+        <Name>libqtxdg</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <PartOf>desktop.lxde.base</PartOf>
+        <IsA>library</IsA>
+        <Summary>Library providing freedesktop.org specs implementations for Qt.</Summary>
+        <Description>Library providing freedesktop.org specs implementations for Qt.</Description>
+        <Archive sha1sum="eb0e7501d2e7826c750623238d031306c4129f20" type="zip">https://github.com/vdemir/libqtxdg/archive/master.zip</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>unzip</Dependency>
+        </BuildDependencies>   
+    </Source>
+    <Package>
+        <Name>libqtxdg</Name>
+        <Files>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share/</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libqtxdg-devel</Name>
+        <Summary>Development headers for libqtxdg</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libqtxdg</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2014-04-25</Date>
+            <Version>0.5.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>
+

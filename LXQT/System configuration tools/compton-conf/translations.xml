@@ -1,0 +1,9 @@
+<PISI>
+    <Source>
+        <Name>compton-conf</Name>
+        <Summary xml:lang="tr">GUI configuration tool for compton X composite manager.</Summary>
+        <Description xml:lang="tr">GUI configuration tool for compton X composite manager.</Description>
+    </Source>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
