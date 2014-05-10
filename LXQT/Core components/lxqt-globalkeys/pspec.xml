@@ -11,7 +11,7 @@
         <IsA>app</IsA>
         <Summary>Daemon used to register global keyboard shortcuts</Summary>
         <Description>LXQt daemon and library for global keyboard shortcuts registration.</Description>
-        <Archive sha1sum="388a8bb793b58f9b3c381389533bf9803df936c1" type="zip">https://github.com/vdemir/lxqt-globalkeys/archive/master.zip</Archive>
+        <Archive sha1sum="b6e6e7ce7dbcab46454c235c5463d75ae765db73" type="zip">https://github.com/vdemir/lxqt-globalkeys/archive/master.zip</Archive>
 	<BuildDependencies>
             <Dependency>liblxqt</Dependency>
 	    <Dependency>libX11</Dependency>
@@ -44,7 +44,7 @@
     <History>
         <Update release="1">
             <Date>2014-05-01</Date>
-            <Version>0.6.99</Version>
+            <Version>0.7</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>

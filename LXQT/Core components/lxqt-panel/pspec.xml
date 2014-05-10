@@ -11,7 +11,7 @@
         <IsA>app</IsA>
         <Summary>Desktop panel</Summary>
         <Description>The LXQt desktop panel</Description>
-            <Archive sha1sum="97042f1fdcc93c1315ce1aa7c67268a35cd9552a" type="zip">https://github.com/vdemir/lxqt-panel/archive/master.zip</Archive>
+            <Archive sha1sum="167069204c0f02667b0e7318c01ea9f871079b2a" type="zip">https://github.com/vdemir/lxqt-panel/archive/master.zip</Archive>
         <BuildDependencies>
             <Dependency>icu4c-devel</Dependency>
 	    <Dependency>gcc</Dependency>
