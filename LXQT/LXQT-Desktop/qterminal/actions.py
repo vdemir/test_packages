@@ -8,8 +8,10 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 
 def setup():
-    cmaketools.configure("-DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib -DCMAKE_INCLUDE_DIR=/usr/include/qtermwidget/")
-#-DCMAKE_BUILD_TYPE=RelWithDebInfo-DCMAKE_BUILD_TYPE=RelWithDebInfo-DCMAKE_INSTALL_LIBDIR=/usr/lib
+    cmaketools.configure("-DCMAKE_BUILD_TYPE:STRING=Release \
+                          -DCMAKE_INSTALL_PREFIX=/usr \
+                          -DCMAKE_INSTALL_LIBDIR=/usr/lib")
+
 def build():
     cmaketools.make()
 

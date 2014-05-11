@@ -25,6 +25,10 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share</Path>
         </Files>
+	<RuntimeDependencies>
+            <Dependency release="current">gvfs</Dependency>
+	    <Dependency release="current">lxmenu-data</Dependency>
+        </RuntimeDependencies>
     </Package>
     <Package>
         <Name>libfm-devel</Name>

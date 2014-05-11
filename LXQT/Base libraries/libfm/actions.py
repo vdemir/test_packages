@@ -11,10 +11,12 @@ from pisi.actionsapi import autotools
 
 def setup():
     shelltools.system("./autogen.sh --enable-shared --disable-static \
+				    --without-gtk --disable-gtk-doc \
 				    --enable-udisks --disable-actions \
                                     --disable-demo --disable-dependency-tracking \
-                                    --prefix=/usr --libdir=/usr/lib --enable-fast-install=autogen")
-#--without-gtk \--disable-gtk-doc
+                                    --prefix=/usr --libdir=/usr/lib --sysconfdir=/etc \
+                                    --enable-fast-install=autogen")
+
 def build():
     autotools.make()
 

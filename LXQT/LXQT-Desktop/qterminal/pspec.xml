@@ -24,7 +24,8 @@
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>QTermWidget.patch
+            <Path fileType="data">/usr/share/</Path>
+	    <Path fileType="executable">/usr/bin/</Path>
         </Files>
     </Package>
     <History>

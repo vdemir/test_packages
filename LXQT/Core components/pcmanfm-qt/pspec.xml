@@ -18,19 +18,21 @@
             <Dependency>menu-cache-devel</Dependency>
 	    <Dependency>libqtxdg-devel</Dependency>
 	    <Dependency>evince-devel</Dependency>
+	    <Dependency>qt-devel</Dependency>
+	    <Dependency>cmake</Dependency>
+	    <Dependency>pkgconfig</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
+        <Name>pcmanfm-qt</Name>
         <RuntimeDependencies>
             <Dependency>gksu</Dependency>
 	    <Dependency>evince</Dependency>
 	    <Dependency>xarchiver</Dependency>
-            <Dependency>lxterminal</Dependency>
+            <Dependency>qterminal</Dependency>
 	    <Dependency>libqtxdg</Dependency>
 	    <Dependency version="1.2">libfm</Dependency>
-	    <Dependency>leafpad</Dependency>
         </RuntimeDependencies>
-        <Name>pcmanfm-qt</Name>
         <Files>
 	    <Path fileType="library">/usr/lib</Path>
             <Path fileType="executable">/usr/bin</Path>

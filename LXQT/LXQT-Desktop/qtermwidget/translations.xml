@@ -1,9 +1,0 @@
-<PISI>
-    <Source>
-        <Name>qtermwidget</Name>
-        <Summary xml:lang="tr">QTermWidget is an opensource project originally based on KDE4 Konsole application</Summary>
-        <Description xml:lang="tr">QTermWidget is an opensource project originally based on KDE4 Konsole application</Description>
-    </Source>
-</PISI>
-
-<!-- By PiSiDo 2.0.0 -->
