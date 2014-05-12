@@ -7,7 +7,7 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.base.tools</PartOf>
+        <PartOf>desktop.lxqt.tools</PartOf>
         <IsA>library</IsA>
         <Summary>LXQt system configuration.</Summary>
         <Description>LXDE-Qt system configurations (control center)</Description>

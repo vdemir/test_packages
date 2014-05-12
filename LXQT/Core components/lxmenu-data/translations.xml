@@ -1,7 +1,7 @@
 <PISI>
     <Source>
-        <Name>libfm</Name>
-        <Summary xml:lang="tr">LXDE dosya yönetimi kitaplıkları</Summary>
-        <Description xml:lang="tr">libfm, LXDE için dosya yönetim kitaplıklarını içerir.</Description>
+        <Name>lxmenu-data</Name>
+        <Summary xml:lang="tr">freedesktop.org uygulama menüsü tanım dosyaları</Summary>
+        <Description xml:lang="tr">lxmenu-data, freedesktop.org uygulama menüsü için tanım dosyaları içerir.</Description>
     </Source>
 </PISI>

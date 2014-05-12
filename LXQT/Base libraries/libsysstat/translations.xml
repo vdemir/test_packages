@@ -1,7 +1,7 @@
 <PISI>
     <Source>
-        <Name>liblxqt</Name>
-        <Summary xml:lang="tr">Çoğu lxde-qt bileşenleri için ortak temel kitaplıklar.</Summary>
-        <Description xml:lang="tr">liblxqt çoğu lxde-qt bileşenleri için ortak temel kitaplıklar içerir.</Description>
+        <Name>libsysstat</Name>
+        <Summary xml:lang="tr">Sistem bilgisi ve istatistik sorgulamak için kullanılan kütüphane.</Summary>
+        <Description xml:lang="tr">Sistem bilgisi ve istatistik sorgulamak için kullanılan temel kitaplıklar içerir.</Description>
     </Source>
 </PISI>

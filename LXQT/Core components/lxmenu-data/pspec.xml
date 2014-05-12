@@ -7,20 +7,21 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde</PartOf>
+        <PartOf>desktop.lxqt</PartOf>
         <IsA>app</IsA>
         <Summary>freedesktop.org application menu definition files</Summary>
-        <Description>freedesktop.org application menu definition files</Description>
+        <Description>lxmenu-data is freedesktop.org application menu definition files</Description>
         <BuildDependencies>
             <Dependency>liblxqt</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="b8e73d7bb1edeb9a0ca23025d2348f1d1521f9c1" type="zip">https://github.com/vdemir/lxmenu-data/archive/master.zip</Archive>
+        <Archive sha1sum="7cd0a9adc6f25d0953bb595356f6a54673784f69" type="zip">https://github.com/vdemir/lxmenu-data/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>lxmenu-data</Name>
         <Files>
 	    <Path fileType="sysdir">/etc</Path>
 	    <Path fileType="data">/usr/share/</Path>
+	    <Path fileType="data">/usr/share/doc/</Path>
         </Files>
     </Package>
     <History>

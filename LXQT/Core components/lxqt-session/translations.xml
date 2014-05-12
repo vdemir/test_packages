@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>libqtxdg</Name>
+        <Name>lxqt-session</Name>
         <Summary xml:lang="tr">LXQt oturumu.</Summary>
         <Description xml:lang="tr">Orjinal razor-sessiondan taşınan bir alternatif oturum yöneticisidir.</Description>
     </Source>

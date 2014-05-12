@@ -7,7 +7,7 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.base</PartOf>
+        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>library</IsA>
         <Summary>Common base library for LXQt components.</Summary>
         <Description>Core utility library for all LXDE-Qt components</Description>
@@ -16,12 +16,14 @@
             <Dependency>cmake</Dependency>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>libqtxdg-devel</Dependency>
+	    <Dependency>libX11-devel</Dependency>
         </BuildDependencies>
             </Source>
     <Package>
         <Name>liblxqt</Name>
         <RuntimeDependencies>
             <Dependency>libqtxdg</Dependency>
+	    <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -42,7 +44,7 @@
     <History>
         <Update release="1">
             <Date>2014-04-25</Date>
-            <Version>0.6.99</Version>
+            <Version>0.7.0</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>

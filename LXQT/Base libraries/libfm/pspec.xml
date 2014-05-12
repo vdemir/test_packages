@@ -7,7 +7,7 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.base</PartOf>
+        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>library</IsA>
         <Summary>Core library of PCManFM file manager</Summary>
         <Description>libfm is a Core library of PCManFM file manager</Description>
@@ -15,7 +15,7 @@
             <Dependency>qt-devel</Dependency>
 	    <Dependency>menu-cache-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="798e0743e89e40b21270f717ef488c654c7fd725" type="zip">https://github.com/vdemir/libfm/archive/master.zip</Archive>
+        <Archive sha1sum="ec42b85712396709f004e5fb10e0b6dbf8e974a1" type="zip">https://github.com/vdemir/libfm/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>libfm</Name>

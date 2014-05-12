@@ -3,11 +3,11 @@
         <Name>pcmanfm-qt</Name>
         <Homepage>http://www.lxde.org</Homepage>
         <Packager>
-            <Name>Vedat  Demir</Name>
+            <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde</PartOf>
+        <PartOf>desktop.lxqt</PartOf>
         <IsA>app:gui</IsA>
         <Summary>The LXQt file manager, Qt port of PCManFM</Summary>
         <Description>File manager and desktop icon manager (Qt port of PCManFM and libfm)</Description>
@@ -43,7 +43,7 @@
     <History>
         <Update release="1">
             <Date>2014-05-02</Date>
-            <Version>0.6.99</Version>
+            <Version>0.7.0</Version>
             <Comment>First Release</Comment>
             <Name>Vedat  Demir</Name>
             <Email>v.demir@mail.com</Email>

@@ -7,18 +7,23 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.tools</PartOf>
+        <PartOf>desktop.lxqt.tools</PartOf>
         <IsA>app</IsA>
         <Summary>This is a Qt port of ObConf, configurator of OpenBox window manager.</Summary>
         <Description>This is a Qt port of ObConf, configurator of OpenBox window manager.</Description>
         <BuildDependencies>
             <Dependency version="3.5.2">openbox-devel</Dependency>
-	    <Dependency version="3.5.2">openbox</Dependency>
+	    <Dependency>pkgconfig</Dependency>
+	    <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Archive sha1sum="006f6927970cc2973a996224da5be4fef8b10946" type="zip">https://github.com/vdemir/obconf-qt/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>obconf-qt</Name>
+        <RuntimeDependencies>
+            <Dependency version="3.5.2">openbox</Dependency>
+	    <Dependency>qt</Dependency>
+        </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="data">/usr/share</Path>

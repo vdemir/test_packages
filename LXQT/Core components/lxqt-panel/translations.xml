@@ -1,7 +1,7 @@
 <PISI>
     <Source>
-        <Name>liblxqt</Name>
-        <Summary xml:lang="tr">Çoğu lxde-qt bileşenleri için ortak temel kitaplıklar.</Summary>
-        <Description xml:lang="tr">liblxqt çoğu lxde-qt bileşenleri için ortak temel kitaplıklar içerir.</Description>
+        <Name>lxqt-panel</Name>
+        <Summary xml:lang="tr">LXQt masaüstü paneli.</Summary>
+        <Description xml:lang="tr">lxqt-panel, LXQt masaüstü panelidir.</Description>
     </Source>
 </PISI>

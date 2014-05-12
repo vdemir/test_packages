@@ -7,7 +7,7 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxde.base</PartOf>
+        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>library</IsA>
         <Summary>Library used to query system info and statistics</Summary>
         <Description>Library to query system statistics (net, resource usage, ...)</Description>

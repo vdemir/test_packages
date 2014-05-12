@@ -11,7 +11,7 @@
         <IsA>app</IsA>
         <Summary>Desktop panel</Summary>
         <Description>The LXQt desktop panel</Description>
-            <Archive sha1sum="167069204c0f02667b0e7318c01ea9f871079b2a" type="zip">https://github.com/vdemir/lxqt-panel/archive/master.zip</Archive>
+            <Archive sha1sum="586c3ec4beb4ab50c1d92e94d76f4a9566f528ad" type="zip">https://github.com/vdemir/lxqt-panel/archive/master.zip</Archive>
         <BuildDependencies>
             <Dependency>icu4c-devel</Dependency>
 	    <Dependency>gcc</Dependency>
@@ -28,6 +28,8 @@
 	    <Dependency>lm_sensors-devel</Dependency>
 	    <Dependency>libxcb-devel</Dependency>
 	    <Dependency>network-manager-applet-devel</Dependency>
+	    <Dependency>libXcomposite-devel</Dependency>
+	    <Dependency>menu-cache-devel</Dependency>
         </BuildDependencies>
         </Source>
     <Package>
@@ -45,19 +47,32 @@
 	    <Dependency>network-manager-applet</Dependency>
 	    <Dependency>lxqt-powermanagement</Dependency>
 	    <Dependency>xfce4-power-manager</Dependency>
+	    <Dependency>libXcomposite</Dependency>
+	    <Dependency>lxmenu-data</Dependency>
+	    <Dependency>menu-cache</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="sysdir">/etc</Path>
 	    <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="header">/usr/include</Path>
 	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>lxqt-panel-devel</Name>
+        <Summary>Development headers for lxqt-panel</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">lxqt-panel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
             <Date>2014-05-02</Date>
-            <Version>0.6.99</Version>
+            <Version>0.7.0</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
             <Email>v.demir@mail.com</Email>
