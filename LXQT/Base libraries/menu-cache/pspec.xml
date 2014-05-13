@@ -11,13 +11,20 @@
         <IsA>app</IsA>
         <Summary>freedesktop.org desktop menus for LXDE</Summary>
         <Description>Library used to read freedesktop.org menus</Description>
-        <Archive sha1sum="9580ee33966d112ed421f2c523b0730ad69e109d" type="targz">http://downloads.sourceforge.net/lxde/menu-cache-0.5.1.tar.gz</Archive>
+        <Archive sha1sum="af55c4cc0ffc1d4d7f0dc53ef250685f418ef148" type="zip">https://github.com/vdemir/menu-cache/archive/master.zip</Archive>
+	<BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>qt-devel</Dependency>
+	    <Dependency>gettext-devel</Dependency>
+        </BuildDependencies>
     </Source>
     <Package>
         <Name>menu-cache</Name>
+        <RuntimeDependencies>
+            <Dependency>gettext</Dependency>
+        </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/libexec</Path>
-	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
@@ -29,6 +36,16 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libmenu-cache</Name>
+        <Summary>Library for menu-cache</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">menu-cache</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
