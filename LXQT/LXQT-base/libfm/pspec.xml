@@ -14,8 +14,9 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>menu-cache-devel</Dependency>
+	    <Dependency>libexif-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="ec42b85712396709f004e5fb10e0b6dbf8e974a1" type="zip">https://github.com/vdemir/libfm/archive/master.zip</Archive>
+        <Archive sha1sum="bbe96b564cefc46c0bb72ad85f5dce4f4d56eca7" type="zip">https://github.com/vdemir/libfm/archive/master.zip</Archive>
     </Source>
     <Package>
         <Name>libfm</Name>
@@ -26,8 +27,8 @@
             <Path fileType="doc">/usr/share</Path>
         </Files>
 	<RuntimeDependencies>
-            <Dependency release="current">gvfs</Dependency>
-	    <Dependency release="current">lxmenu-data</Dependency>
+	    <Dependency>lxmenu-data</Dependency>
+            <Dependency>gvfs</Dependency>
         </RuntimeDependencies>
     </Package>
     <Package>

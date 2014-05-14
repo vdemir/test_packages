@@ -28,9 +28,9 @@
     </Package>
     <Package>
         <Name>qtermwidget4-devel</Name>
-        <Summary>Development headers for qtermwidget</Summary>
+        <Summary>Development headers for qtermwidget4</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">qtermwidget</Dependency>
+            <Dependency release="current">qtermwidget4</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

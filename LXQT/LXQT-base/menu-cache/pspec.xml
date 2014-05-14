@@ -22,6 +22,7 @@
         <Name>menu-cache</Name>
         <RuntimeDependencies>
             <Dependency>gettext</Dependency>
+	    <Dependency>gtk-doc</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/libexec</Path>

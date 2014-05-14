@@ -15,7 +15,7 @@
 	<BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>libqxt-devel</Dependency>
-	    <Dependency>qtermwidget-devel</Dependency>
+	    <Dependency>qtermwidget4-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>

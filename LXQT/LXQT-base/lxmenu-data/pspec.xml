@@ -12,7 +12,8 @@
         <Summary>freedesktop.org application menu definition files</Summary>
         <Description>lxmenu-data is freedesktop.org application menu definition files</Description>
         <BuildDependencies>
-            <Dependency>liblxqt</Dependency>
+            <Dependency>liblxqt-devel</Dependency>
+	    <Dependency>gettext-devel</Dependency>
         </BuildDependencies>
         <Archive sha1sum="7cd0a9adc6f25d0953bb595356f6a54673784f69" type="zip">https://github.com/vdemir/lxmenu-data/archive/master.zip</Archive>
     </Source>
