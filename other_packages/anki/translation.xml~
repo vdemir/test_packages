@@ -1,7 +1,0 @@
-<PISI>
-    <Source>
-        <Name>Anki</Name>
-        <Summary xml:lang="tr">flashcard uygulaması</Summary>
-        <Description xml:lang="tr">Arkadaş canlısı zeki flaş kartlar. Birşeyleri hatırlatma daha kolay oldı.</Description>
-    </Source>
-</PISI>
