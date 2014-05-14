@@ -7,7 +7,7 @@
             <Email>v.demir@mail.com</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt</PartOf>
+        <PartOf>desktop.lxqt.core</PartOf>
         <IsA>data</IsA>
         <Summary>Common data to run a LXQt session.</Summary>
         <Description>Common data file required for running an lxde-qt session</Description>
