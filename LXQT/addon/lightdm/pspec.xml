@@ -20,6 +20,7 @@
 	    <Dependency>gobject-introspection-devel</Dependency>
 	    <Dependency>gtk-doc</Dependency>
 	    <Dependency>qt-devel</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
 	    <Dependency>accountsservice-devel</Dependency>
         </BuildDependencies>
 	<Patches>
@@ -35,7 +36,6 @@
         </Conflicts>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/display-managers/lightdm.desktop">lightdm.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/xdm">xdm</AdditionalFile>
 	    <AdditionalFile owner="root" permission="0644" target="/etc/lightdm/Xsession">Xsession</AdditionalFile>
 	    <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/lightdm-autologin">lightdm-autologin.pam</AdditionalFile>
         </AdditionalFiles>

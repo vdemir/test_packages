@@ -4,7 +4,7 @@
         <Homepage>http://www.lxde.org</Homepage>
         <Packager>
             <Name>Vedat Demir</Name>
-            <Email>v.demir@mail.com</Email>
+            <Email>vedat@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
         <PartOf>desktop.lxqt.base</PartOf>
@@ -35,7 +35,7 @@
 	    <Dependency>xarchiver</Dependency>
             <Dependency>qterminal</Dependency>
 	    <Dependency>libqtxdg</Dependency>
-	    <Dependency>lxmenu-data</Dependency>
+	    <Dependency>lxqtmenu-data</Dependency>
 	    <Dependency>glib2</Dependency>
             <Dependency>lxqt-menu-cache</Dependency>
 	    <Dependency>gvfs</Dependency>

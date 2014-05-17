@@ -24,7 +24,7 @@ def setup():
                          --disable-wimax \
                          --enable-more-warnings=yes \
                          --with-crypto=nss \
-                         --with-resolvconf=/etc/resolv.conf \
+                         --with-resolvconf=/etc/resolv.default.conf \
                          --with-iptables=/usr/sbin/iptables \
                         ")
 

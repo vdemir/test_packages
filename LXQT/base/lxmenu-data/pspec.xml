@@ -4,13 +4,13 @@
         <Homepage>http://www.lxde.org</Homepage>
         <Packager>
             <Name>Vedat Demir</Name>
-            <Email>v.demir@mail.com</Email>
+            <Email>vedat@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
         <PartOf>desktop.lxqt.base</PartOf>
         <IsA>data</IsA>
         <Summary>freedesktop.org application menu definition files</Summary>
-        <Description>lxmenu-data is freedesktop.org application menu definition files</Description>
+        <Description>lxqtmenu-data is freedesktop.org application menu definition files</Description>
         <BuildDependencies>
             <Dependency>liblxqt-devel</Dependency>
 	    <Dependency>gettext-devel</Dependency>
@@ -31,7 +31,7 @@
             <Version>0.1</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
-            <Email>v.demir@mail.com</Email>
+            <Email>vedat@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>

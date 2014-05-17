@@ -4,14 +4,14 @@
         <Homepage>http://www.lxde.org</Homepage>
         <Packager>
             <Name>Vedat Demir</Name>
-            <Email>v.demir@mail.com</Email>
+            <Email>vedat@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
         <PartOf>desktop.lxqt.base</PartOf>
         <IsA>library</IsA>
         <Summary>Core library of PCManFM file manager</Summary>
         <Description>libfm is a Core library of PCManFM file manager</Description>
-	<Archive sha1sum="d60ad2a2775eb7cde4bae38f563e68638477683a" type="zip">https://content.wuala.com/contents/vedat/sources/libfm-master.zip</Archive>
+	<Archive sha1sum="cdfac49346cff76936afa504d1ebb131b839fb47" type="zip">https://content.wuala.com/contents/vedat/sources/libfm-master.zip</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
 	    <Dependency>libexif-devel</Dependency>
@@ -33,7 +33,7 @@
             <Path fileType="doc">/usr/share</Path>
         </Files>
 	<RuntimeDependencies>
-	    <Dependency>lxmenu-data</Dependency>
+	    <Dependency>lxqtmenu-data</Dependency>
             <Dependency>gvfs</Dependency>
 	    <Dependency>kdelibs</Dependency>
             <Dependency>QtCurve-KDE4</Dependency>
@@ -64,7 +64,7 @@
             <Version>1.2.0</Version>
             <Comment>First Release</Comment>
             <Name>Vedat Demir</Name>
-            <Email>v.demir@mail.com</Email>
+            <Email>vedat@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>
