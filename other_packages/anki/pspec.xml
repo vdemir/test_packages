@@ -1,0 +1,51 @@
+<PISI>
+    <Source>
+        <Name>Anki</Name>
+        <Homepage>http://ankisrs.net</Homepage>
+        <Packager>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Packager>
+        <License>AGPL3</License>
+        <Icon>anki</Icon>
+        <PartOf>desktop.office</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Anki - powerful, intelligent flashcards</Summary>
+        <Description>Friendly, intelligent flash cards. Remembering things just became much easier.</Description>
+        <BuildDependencies>
+            <Dependency>python-beautifulsoup</Dependency>
+            <Dependency>python-httplib2</Dependency>
+            <Dependency>python-qt</Dependency>
+            <Dependency>python-sqlalchemy</Dependency>
+            <Dependency>lame</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="2d916ae56848675f45bea05b94fa5f384195f36c" type="targz">http://ankisrs.net/download/mirror/anki-2.0.26.tgz</Archive>
+    </Source>
+    <Package>
+        <Name>anki</Name>
+        <RuntimeDependencies>
+            <Dependency>mplayer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/anki</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/applications/anki.desktop">anki.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/pixmaps/anki.png">anki.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="2">
+            <Date>2014-04-18</Date>
+            <Version>2.0.26</Version>
+            <Comment>First Release</Comment>
+            <Name>Vedat Demir</Name>
+            <Email>v.demir@mail.com</Email>
+        </Update>
+    </History>
+</PISI>

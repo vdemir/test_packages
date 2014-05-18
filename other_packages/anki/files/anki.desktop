@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Anki
+Name[tr]=Anki
+GenericName=Anki
+GenericName[tr]=Flaş kart uygulaması
+Comment=Friendly, intelligent flash cards. Remembering things just became much easier.
+Comment[tr]=Flai kart uygulaması
+Icon=anki
+Exec=runanki
+Terminal=false
+Type=Application
+Categories=Python;Utility;TextEditor;
