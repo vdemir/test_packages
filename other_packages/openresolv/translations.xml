@@ -1,0 +1,9 @@
+<PISI>
+    <Source>
+        <Name>openresolv</Name>
+        <Summary xml:lang="tr">resolv.conf management framework (resolvconf)</Summary>
+        <Description xml:lang="tr">resolv.conf management framework (resolvconf)</Description>
+    </Source>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

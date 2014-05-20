@@ -16,6 +16,4 @@ def install():
     pisitools.insinto("/usr/share/pixmaps/", "anki.xpm")
     pisitools.insinto("/usr/share/applications/", "anki.desktop")
     pisitools.insinto("/usr/share/anki/", "thirdparty/send2trash")
-    for lang in ["de", "es", "fr", "it", "nl", "pl", "tr"]:
-	 pisitools.insinto("/usr/share/locale/%s/LC_MESSAGES/" % lang, "locale/%s/LC_MESSAGES/*" % lang)
     pisitools.dodoc("README", "LICENSE")
